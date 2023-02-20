@@ -1,0 +1,46 @@
+user@ubuntu:/projects/ArrayCat/bin/so-utf8-x64-release$ ./arraycat-memmove_gcc1130-O3 
+CLOCK_PROCESS_CPUTIME_ID reports a resolution (precision) of 1 ns.
+
+Note: genarrcat() is relying on 'memmove()' to do its work!
+
+Testing running time for 1 elements ... done
+
+Crossed threshold where arraycat() is faster at 3 elements:
+intarraycat()   ...  15.898 ns
+genarraycat()   ...  15.829 ns (1.0043 x)
+
+Testing running time for 10 elements ... done
+Testing running time for 100 elements ... done
+Testing running time for 1000 elements ... done
+Testing running time for 10000 elements ... done
+Testing running time for 100000 elements ... done
+Testing running time for 1000000 elements ... done
+
+Average time(s) for 1 elements and 8192 iterations:
+intarraycat()   ...  2.740 ns [2784.2124 MiB/s]
+genarraycat()   ...  4.543 ns [1679.2498 MiB/s] (0.6031 x)
+
+Average time(s) for 10 elements and 8192 iterations:
+intarraycat()   ...  4.534 ns [16825.4994 MiB/s]
+genarraycat()   ...  3.693 ns [20659.1082 MiB/s] (1.2278 x)
+
+Average time(s) for 100 elements and 8192 iterations:
+intarraycat()   ...  10.590 ns [72041.1268 MiB/s]
+genarraycat()   ...  8.469 ns [90086.1945 MiB/s] (1.2505 x)
+
+Average time(s) for 1000 elements and 8192 iterations:
+intarraycat()   ...  84.021 ns [90803.0330 MiB/s]
+genarraycat()   ...  47.675 ns [160028.2674 MiB/s] (1.7624 x)
+
+Average time(s) for 10000 elements and 8192 iterations:
+intarraycat()   ...  1520.650 ns [50171.9251 MiB/s]
+genarraycat()   ...  1307.107 ns [58368.5677 MiB/s] (1.1634 x)
+
+Average time(s) for 100000 elements and 2048 iterations:
+intarraycat()   ...  5922.835 ns [128813.2164 MiB/s]
+genarraycat()   ...  7887.767 ns [96724.3906 MiB/s] (0.7509 x)
+
+Average time(s) for 1000000 elements and 2048 iterations:
+intarraycat()   ...  78585.516 ns [15103.8468 MiB/s]
+genarraycat()   ...  96462.710 ns [12304.6883 MiB/s] (0.8147 x)
+user@ubuntu:/projects/ArrayCat/bin/so-utf8-x64-release$ 

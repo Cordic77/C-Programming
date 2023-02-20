@@ -1,0 +1,47 @@
+c:\Projects\ArrayCat\bin\lib-ansi-x64-release>arraycat-memcpy_vs1745.exe
+CLOCK_PROCESS_CPUTIME_ID reports a resolution (precision) of 100 ns.
+
+Note: genarrcat() is relying on 'memcpy()' to do its work!
+
+Testing running time for 1 elements ... done
+
+Crossed threshold where arraycat() is faster at 4 elements:
+intarraycat()   ...  2.832 ns
+genarraycat()   ...  2.808 ns (1.0087 x)
+
+Testing running time for 10 elements ... done
+Testing running time for 100 elements ... done
+Testing running time for 1000 elements ... done
+Testing running time for 10000 elements ... done
+Testing running time for 100000 elements ... done
+Testing running time for 1000000 elements ... done
+
+Average time(s) for 1 elements and 8192 iterations:
+intarraycat()   ...  1.770 ns [4310.3448 MiB/s]
+genarraycat()   ...  3.552 ns [2147.7663 MiB/s] (0.4983 x)
+
+Average time(s) for 10 elements and 8192 iterations:
+intarraycat()   ...  8.044 ns [9484.0668 MiB/s]
+genarraycat()   ...  6.250 ns [12207.0313 MiB/s] (1.2871 x)
+
+Average time(s) for 100 elements and 8192 iterations:
+intarraycat()   ...  67.236 ns [11347.1314 MiB/s]
+genarraycat()   ...  8.105 ns [94126.5060 MiB/s] (8.2952 x)
+
+Average time(s) for 1000 elements and 8192 iterations:
+intarraycat()   ...  521.338 ns [14634.2606 MiB/s]
+genarraycat()   ...  60.278 ns [126569.4613 MiB/s] (8.6488 x)
+
+Average time(s) for 10000 elements and 8192 iterations:
+intarraycat()   ...  5266.016 ns [14487.9831 MiB/s]
+genarraycat()   ...  1418.823 ns [53772.6921 MiB/s] (3.7115 x)
+
+Average time(s) for 100000 elements and 2048 iterations:
+intarraycat()   ...  13974.036 ns [54596.9305 MiB/s]
+genarraycat()   ...  12898.181 ns [59150.9333 MiB/s] (1.0834 x)
+
+Average time(s) for 1000000 elements and 2048 iterations:
+intarraycat()   ...  153860.059 ns [7714.4361 MiB/s]
+genarraycat()   ...  133490.015 ns [8891.6283 MiB/s] (1.1526 x)
+
+c:\Projects\ArrayCat\bin\lib-ansi-x64-release>
