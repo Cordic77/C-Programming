@@ -1,0 +1,10 @@
+c:\Projects\ArrayAdd\bin\lib-ansi-x64-release>arrayadd_vs2022.exe
+CLOCK_PROCESS_CPUTIME_ID reports a resolution (precision) of 100 ns.
+
+Testing running time for 1 elements ... done
+
+Average time(s) for 1 elements and 8192 iterations:
+int4arrayadd()   ...  1.282 ns
+simdarrayadd()   ...  0.916 ns (1.4000 x)
+
+c:\Projects\ArrayAdd\bin\lib-ansi-x64-release>

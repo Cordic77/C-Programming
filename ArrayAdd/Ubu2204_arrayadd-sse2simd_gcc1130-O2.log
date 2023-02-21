@@ -1,0 +1,9 @@
+user@ubuntu:/projects/ArrayAdd/bin/so-utf8-x64-release$ ./arrayadd
+CLOCK_PROCESS_CPUTIME_ID reports a resolution (precision) of 1 ns.
+
+Testing running time for 1 elements ... done
+
+Average time(s) for 1 elements and 8192 iterations:
+int4arrayadd()   ...  13.128 ns
+simdarrayadd()   ...  6.422 ns (2.0442 x)
+user@ubuntu:/projects/ArrayAdd/bin/so-utf8-x64-release$
