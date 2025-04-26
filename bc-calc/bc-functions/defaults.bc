@@ -1,0 +1,12 @@
+obase=10
+ibase=10
+if (scale == 0 /* default in case of no arguments */ || scale == 20 /* default if -l was specified */)
+  scale=8
+
+/* how */
+define cos(x)
+{
+	return (c(x))
+}
+define trunc (x)
+{ auto s; s=scale; scale=0; x=x/1; scale=s; return x }
