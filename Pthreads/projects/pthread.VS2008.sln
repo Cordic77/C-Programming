@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthread", "pthread.VS2008.vcproj", "{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthreadcpp", "pthreadcpp.VS2008.vcproj", "{7A790E0F-531A-46BC-82E0-D05608E93D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		dll-ansi-debug|Win32 = dll-ansi-debug|Win32
+		dll-ansi-debug|x64 = dll-ansi-debug|x64
+		dll-ansi-release|Win32 = dll-ansi-release|Win32
+		dll-ansi-release|x64 = dll-ansi-release|x64
+		lib-ansi-debug|Win32 = lib-ansi-debug|Win32
+		lib-ansi-debug|x64 = lib-ansi-debug|x64
+		lib-ansi-release|Win32 = lib-ansi-release|Win32
+		lib-ansi-release|x64 = lib-ansi-release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-debug|Win32.ActiveCfg = dll-ansi-debug|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-debug|Win32.Build.0 = dll-ansi-debug|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-debug|x64.ActiveCfg = dll-ansi-debug|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-debug|x64.Build.0 = dll-ansi-debug|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-release|Win32.ActiveCfg = dll-ansi-release|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-release|Win32.Build.0 = dll-ansi-release|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-release|x64.ActiveCfg = dll-ansi-release|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.dll-ansi-release|x64.Build.0 = dll-ansi-release|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-debug|Win32.ActiveCfg = lib-ansi-debug|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-debug|Win32.Build.0 = lib-ansi-debug|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-debug|x64.ActiveCfg = lib-ansi-debug|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-debug|x64.Build.0 = lib-ansi-debug|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-release|Win32.ActiveCfg = lib-ansi-release|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-release|Win32.Build.0 = lib-ansi-release|Win32
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-release|x64.ActiveCfg = lib-ansi-release|x64
+		{7B6FAB78-C957-4FC0-B390-CCA81196C1E8}.lib-ansi-release|x64.Build.0 = lib-ansi-release|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-debug|Win32.ActiveCfg = dll-ansi-debug|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-debug|Win32.Build.0 = dll-ansi-debug|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-debug|x64.ActiveCfg = dll-ansi-debug|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-debug|x64.Build.0 = dll-ansi-debug|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-release|Win32.ActiveCfg = dll-ansi-release|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-release|Win32.Build.0 = dll-ansi-release|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-release|x64.ActiveCfg = dll-ansi-release|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.dll-ansi-release|x64.Build.0 = dll-ansi-release|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-debug|Win32.ActiveCfg = lib-ansi-debug|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-debug|Win32.Build.0 = lib-ansi-debug|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-debug|x64.ActiveCfg = lib-ansi-debug|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-debug|x64.Build.0 = lib-ansi-debug|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-release|Win32.ActiveCfg = lib-ansi-release|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-release|Win32.Build.0 = lib-ansi-release|Win32
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-release|x64.ActiveCfg = lib-ansi-release|x64
+		{7A790E0F-531A-46BC-82E0-D05608E93D96}.lib-ansi-release|x64.Build.0 = lib-ansi-release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
