@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="mandelbrot" Database="" Version="10.0.0">
+  <Environment>
+    <![CDATA[]]>
+  </Environment>
+  <Project Name="mandelbrot" Path="mandelbrot.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="so-utf8-x86-debug" Selected="no">
+      <Environment/>
+      <Project Name="mandelbrot" ConfigName="so-utf8-x86-debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="so-utf8-x86-release" Selected="no">
+      <Environment/>
+      <Project Name="mandelbrot" ConfigName="so-utf8-x86-release"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="so-utf8-x64-debug" Selected="no">
+      <Environment/>
+      <Project Name="mandelbrot" ConfigName="so-utf8-x64-debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="so-utf8-x64-release" Selected="yes">
+      <Environment/>
+      <Project Name="mandelbrot" ConfigName="so-utf8-x64-release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

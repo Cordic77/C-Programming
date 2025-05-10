@@ -1,0 +1,2 @@
+Number of horizontal tiles (10 - 128)? 50
+Animation delay [ms] (50 - 1000)?      50

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>cmd</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>cmd</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>classes</path>
+			</folderitem>
+			<folderitem>
+				<path>src</path>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>src\Mandelbrot.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>true</active>
+		</docitem>
+		<docitem>
+			<path>src\Fractal.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>false</active>
+		</docitem>
+	</open_files>
+	<watches>
+		<watch>
+			<expression>leftUpper</expression>
+		</watch>
+		<watch>
+			<expression>.real</expression>
+		</watch>
+	</watches>
+</workspace_user>

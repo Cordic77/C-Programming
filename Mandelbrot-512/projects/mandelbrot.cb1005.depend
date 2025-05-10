@@ -1,0 +1,253 @@
+# depslib dependency file v1.0
+1321644908 source:/d/Nasm/00_Skeleton/asmlib.asm
+
+1321645938 source:/d/Nasm/00_Skeleton/mandelbrot.c
+	<windows.h>
+	<tchar.h>
+	"stdinc.h"
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+
+1321604925 /d/Nasm/00_Skeleton/stdinc.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iso646.h>
+
+1322334436 source:/d/Projects/Assembler/NASM/00_Skeleton64/mandelbrot.c
+	<windows.h>
+	<tchar.h>
+	"stdinc.h"
+	<conio.h>
+	<unistd.h>
+	<termios.h>
+
+1322296126 /d/Projects/Assembler/NASM/00_Skeleton64/stdinc.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iso646.h>
+
+1322388611 source:/d/Projects/Assembler/NASM/00_Skeleton64/asmlib.asm
+
+1426077724 source:/home/scott/Projects/Asm/Mandelbrot/asmlib.asm
+
+1426074656 source:/home/scott/Projects/Asm/Mandelbrot/Complex_ADT.c
+	<math.h>
+	"stdinc.h"
+	"Complex_ADT.h"
+
+1426074838 /home/scott/Projects/Asm/Mandelbrot/stdinc.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iso646.h>
+	"Warnings.h"
+	"Settings.h"
+
+1426075991 /home/scott/Projects/Asm/Mandelbrot/Warnings.h
+
+1426077952 /home/scott/Projects/Asm/Mandelbrot/Settings.h
+
+1426076618 /home/scott/Projects/Asm/Mandelbrot/Complex_ADT.h
+
+1426076013 source:/home/scott/Projects/Asm/Mandelbrot/DrawFractal.c
+	<stdlib.h>
+	<errno.h>
+	<pthread.h>
+	<semaphore.h>
+	<SDL/SDL.h>
+	"stdinc.h"
+	"Graphics.h"
+	"FloatPoint.h"
+	"Complex_ADT.h"
+	"Fractal.h"
+	"DrawFractal.h"
+
+1426076766 /home/scott/Projects/Asm/Mandelbrot/Graphics.h
+
+1426074887 /home/scott/Projects/Asm/Mandelbrot/FloatPoint.h
+
+1426076499 /home/scott/Projects/Asm/Mandelbrot/Fractal.h
+	"SIMD_AVX.h"
+
+1426075385 /home/scott/Projects/Asm/Mandelbrot/SIMD_AVX.h
+	<xmmintrin.h>
+	<emmintrin.h>
+	<immintrin.h>
+
+1426076798 /home/scott/Projects/Asm/Mandelbrot/DrawFractal.h
+
+1426075194 source:/home/scott/Projects/Asm/Mandelbrot/FloatPoint.c
+	<float.h>
+	"stdinc.h"
+	"FloatPoint.h"
+
+1426074656 source:/home/scott/Projects/Asm/Mandelbrot/Fractal.c
+	<float.h>
+	<math.h>
+	<pthread.h>
+	"stdinc.h"
+	"Graphics.h"
+	"Complex_ADT.h"
+	"Fractal.h"
+
+1426076735 source:/home/scott/Projects/Asm/Mandelbrot/Graphics.c
+	<stdlib.h>
+	<math.h>
+	<SDL/SDL.h>
+	"stdinc.h"
+	<SDL/SDL_Draw.h>
+	<SDL/SDL_ttf.h>
+	"Graphics.h"
+
+1426075841 source:/home/scott/Projects/Asm/Mandelbrot/main.c
+	<windows.h>
+	<sys/param.h>
+	<sys/sysctl.h>
+	<unistd.h>
+	<stdio.h>
+	<limits.h>
+	<errno.h>
+	<float.h>
+	<time.h>
+	<iso646.h>
+	<getopt.h>
+	<pthread.h>
+	<SDL/SDL.h>
+	"stdinc.h"
+	"Complex_ADT.h"
+	"FloatPoint.h"
+	"Graphics.h"
+	"Fractal.h"
+	"DrawFractal.h"
+
+1546968871 source:/drv/d/Projects/C/Mandelbrot/src/asmlib.asm
+
+1546862818 source:/drv/d/Projects/C/Mandelbrot/src/Complex_ADT.c
+	<math.h>
+	"stdinc.h"
+	"Complex_ADT.h"
+
+1546803052 /drv/d/Projects/C/Mandelbrot/include/stdinc.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iso646.h>
+	"Config/Warnings.h"
+	"Config/Settings.h"
+
+1546798858 /drv/d/Projects/C/Mandelbrot/include/Config/Warnings.h
+
+1546971270 /drv/d/Projects/C/Mandelbrot/include/Config/Settings.h
+
+1546928939 /drv/d/Projects/C/Mandelbrot/include/Complex_ADT.h
+	"Config/Compiler.h"
+	<complex.h>
+
+1546877269 source:/drv/d/Projects/C/Mandelbrot/src/DrawFractal.c
+	<stdlib.h>
+	<errno.h>
+	<SDL2/SDL.h>
+	<SDL/SDL.h>
+	<pthread.h>
+	<semaphore.h>
+	"stdinc.h"
+	"Graphics.h"
+	"FloatPoint.h"
+	"Complex_ADT.h"
+	"Fractal.h"
+	"DrawFractal.h"
+
+1546873206 /drv/d/Projects/C/Mandelbrot/include/Graphics.h
+
+1546517945 /drv/d/Projects/C/Mandelbrot/include/FloatPoint.h
+
+1546871495 /drv/d/Projects/C/Mandelbrot/include/Fractal.h
+	"SIMD/SIMDTypes.h"
+
+1546781143 /drv/d/Projects/C/Mandelbrot/include/SIMD/SIMDTypes.h
+	"SIMDetect.h"
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<immintrin.h>
+	<zmmintrin.h>
+	<…mmintrin.h>
+
+1546782186 /drv/d/Projects/C/Mandelbrot/include/SIMD/SIMDetect.h
+
+1546721358 /drv/d/Projects/C/Mandelbrot/include/DrawFractal.h
+
+1546524286 source:/drv/d/Projects/C/Mandelbrot/src/FloatPoint.c
+	<float.h>
+	"stdinc.h"
+	"FloatPoint.h"
+
+1546879526 source:/drv/d/Projects/C/Mandelbrot/src/Fractal.c
+	<stdlib.h>
+	<float.h>
+	<math.h>
+	<pthread.h>
+	"stdinc.h"
+	"Graphics.h"
+	"Complex_ADT.h"
+	"Fractal.h"
+
+1546879563 source:/drv/d/Projects/C/Mandelbrot/src/Graphics.c
+	<stdlib.h>
+	<math.h>
+	<SDL2/SDL.h>
+	<SDL/SDL.h>
+	"stdinc.h"
+	<SDL/SDL_Draw.h>
+	<SDL2/SDL_ttf.h>
+	<SDL/SDL_ttf.h>
+	"Graphics.h"
+
+1546879590 source:/drv/d/Projects/C/Mandelbrot/src/main.c
+	<windows.h>
+	<sys/param.h>
+	<sys/sysctl.h>
+	<unistd.h>
+	<stdio.h>
+	<limits.h>
+	<errno.h>
+	<float.h>
+	<time.h>
+	<iso646.h>
+	<getopt.h>
+	<SDL2/SDL.h>
+	<SDL/SDL.h>
+	<pthread.h>
+	"stdinc.h"
+	"Complex_ADT.h"
+	"FloatPoint.h"
+	"Graphics.h"
+	"Fractal.h"
+	"DrawFractal.h"
+
+1546860605 /drv/d/Projects/C/Mandelbrot/include/Config/Compiler.h
+
+1546970840 source:/drv/d/Projects/C/Mandelbrot/src/Fractal_SIMD.c
+	"stdinc.h"
+	"SIMD/SIMDIntrin.h"
+
+1546782411 /drv/d/Projects/C/Mandelbrot/include/SIMD/SIMDIntrin.h
+	"SIMDetect.h"
+	<intrin.h>
+	<smmintrin.h>
+	<x86intrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<ammintrin.h>
+	<wmmintrin.h>
+	<immintrin.h>
+	<zmmintrin.h>
+

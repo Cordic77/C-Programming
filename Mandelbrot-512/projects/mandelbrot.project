@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="mandelbrot" InternalType="Console" Version="10.0.0">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00060001N0005Debug0000000000000001N0007Release0000000000000001N0017so-utf8-x64-debug0000000000000001N0019so-utf8-x64-release0000000000000001N0017so-utf8-x86-debug0000000000000001N0019so-utf8-x86-release000000000000]]>
+    </Plugin>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "Release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "so-utf8-x64-debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "so-utf8-x64-release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "so-utf8-x86-debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "so-utf8-x86-release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="../src/Complex_ADT.c"/>
+    <File Name="../src/FloatPoint.c"/>
+    <File Name="../src/main.c"/>
+    <File Name="../src/Graphics.c"/>
+    <File Name="../src/DrawFractal.c"/>
+    <File Name="../src/Fractal.c"/>
+    <File Name="../src/asmlib.asm"/>
+    <File Name="../src/Fractal_SIMD.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <VirtualDirectory Name="Config">
+      <File Name="../include/Config/Compiler.h"/>
+      <File Name="../include/Config/Settings.h"/>
+      <File Name="../include/Config/Warnings.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="SIMD">
+      <File Name="../include/SIMD/SIMDetect.h"/>
+      <File Name="../include/SIMD/SIMDIntrin.h"/>
+      <File Name="../include/SIMD/SIMDTypes.h"/>
+    </VirtualDirectory>
+    <File Name="../include/Complex_ADT.h"/>
+    <File Name="../include/FloatPoint.h"/>
+    <File Name="../include/Fractal.h"/>
+    <File Name="../include/Graphics.h"/>
+    <File Name="../include/DrawFractal.h"/>
+    <File Name="../include/stdinc.h"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="-Wmain;-pedantic-errors;-ansi;-pedantic;-W;-Wall;-Wextra;-Werror" C_Options="-Wmain;-pedantic-errors;-ansi;-pedantic;-W;-Wall;-march=native;-Wextra;-Werror" Assembler="">
+        <IncludePath Value="../include"/>
+        <Preprocessor Value="_GNU_SOURCE=1"/>
+        <Preprocessor Value="_REENTRANT"/>
+      </Compiler>
+      <Linker Options="$(IntermediateDirectory)/asmlib.o">
+        <LibraryPath Value="$(IntermediateDirectory)"/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="so-utf8-x64-debug" CompilerType="GCC ( 4.9 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-m64;-g;-O0;-Wall" C_Options="-m64;-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="_DEBUG"/>
+      </Compiler>
+      <Linker Options="-m64" Required="yes">
+        <Library Value="pthread"/>
+        <Library Value="SDL"/>
+        <Library Value="SDL_ttf"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/../../$(ProjectName)" IntermediateDirectory="../bin/so-utf8-x64-debug/obj/codelite" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)/../../" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild>$(IntermediateDirectory)/asmlib.o
+$(IntermediateDirectory)/asmlib.o:
+	mkdir -p '$(IntermediateDirectory)'
+	nasm -dLIBRARY -f elf64 -F dwarf -g -Xgnu -o '$(IntermediateDirectory)/asmlib.o' ../src/asmlib.asm</CustomPreBuild>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="so-utf8-x64-release" CompilerType="GCC ( 4.9 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-m64;-O2;-Wall" C_Options="-m64;-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="-s;-m64" Required="yes">
+        <Library Value="pthread"/>
+        <Library Value="SDL"/>
+        <Library Value="SDL_ttf"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/../../$(ProjectName)" IntermediateDirectory="../bin/so-utf8-x64-release/obj/codelite" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)/../../" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild>$(IntermediateDirectory)/asmlib.o
+$(IntermediateDirectory)/asmlib.o:
+	mkdir -p '$(IntermediateDirectory)'
+	nasm -dLIBRARY -f elf64 -Xgnu -o '$(IntermediateDirectory)/asmlib.o' ../src/asmlib.asm</CustomPreBuild>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="so-utf8-x86-debug" CompilerType="GCC ( 4.9 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-m32;-g;-O0;-Wall" C_Options="-m32;-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="_DEBUG"/>
+      </Compiler>
+      <Linker Options="-m32" Required="yes">
+        <Library Value="pthread"/>
+        <Library Value="SDL"/>
+        <Library Value="SDL_ttf"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/../../$(ProjectName)" IntermediateDirectory="../bin/so-utf8-x86-debug/obj/codelite" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)/../../" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild>$(IntermediateDirectory)/asmlib.o
+$(IntermediateDirectory)/asmlib.o:
+	mkdir -p '$(IntermediateDirectory)'
+	nasm -dLIBRARY -f elf32 -F dwarf -g -Xgnu -o '$(IntermediateDirectory)/asmlib.o' ../src/asmlib.asm</CustomPreBuild>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="so-utf8-x86-release" CompilerType="GCC ( 4.9 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-m32;-O2;-Wall" C_Options="-m32;-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="-s;-m32" Required="yes">
+        <Library Value="pthread"/>
+        <Library Value="SDL"/>
+        <Library Value="SDL_ttf"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/../../$(ProjectName)" IntermediateDirectory="../bin/so-utf8-x86-release/obj/codelite" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)/../../" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild>$(IntermediateDirectory)/asmlib.o
+$(IntermediateDirectory)/asmlib.o:
+	mkdir -p '$(IntermediateDirectory)'
+	nasm -dLIBRARY -f elf32 -Xgnu -o '$(IntermediateDirectory)/asmlib.o' ../src/asmlib.asm
+</CustomPreBuild>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

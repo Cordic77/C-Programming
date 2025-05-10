@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="SDL"
+	>
+<!-- SDL v1 -->
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="SDL_VER=1"
+	/>
+	<UserMacro
+		Name="SDL_VER"
+		Value=""
+	/>
+
+<!-- SDL v2 -->
+<!--
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="SDL_VER=2"
+	/>
+	<UserMacro
+		Name="SDL_VER"
+		Value="2"
+	/>
+-->
+
+</VisualStudioPropertySheet>

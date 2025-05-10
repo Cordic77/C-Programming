@@ -1,0 +1,5 @@
+D:\Projects\Graphics\Fractals\Mandelbrot\01_Mandelbrot\mandelbrot-java\src\Complex.java
+D:\Projects\Graphics\Fractals\Mandelbrot\01_Mandelbrot\mandelbrot-java\src\Fractal.java
+D:\Projects\Graphics\Fractals\Mandelbrot\01_Mandelbrot\mandelbrot-java\src\Mandelbrot.java
+D:\Projects\Graphics\Fractals\Mandelbrot\01_Mandelbrot\mandelbrot-java\src\Pad.java
+D:\Projects\Graphics\Fractals\Mandelbrot\01_Mandelbrot\mandelbrot-java\src\VGA.java

@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="dll-ansi-debug|Win32">
+      <Configuration>dll-ansi-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-debug|x64">
+      <Configuration>dll-ansi-debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-release|Win32">
+      <Configuration>dll-ansi-release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-release|x64">
+      <Configuration>dll-ansi-release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-debug|Win32">
+      <Configuration>lib-ansi-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-debug|x64">
+      <Configuration>lib-ansi-debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-release|Win32">
+      <Configuration>lib-ansi-release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-release|x64">
+      <Configuration>lib-ansi-release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>mandelbrot</ProjectName>
+    <ProjectGuid>{D1E3AD82-21FF-48F0-A829-9582D0BD32A4}</ProjectGuid>
+    <RootNamespace>mandelbrot</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\dll-ansi-x86-debug\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\dll-ansi-x86-debug\VS2015\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">
+    <OutDir>$(SolutionDir)..\bin\dll-ansi-x64-debug\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\dll-ansi-x64-debug\VS2015\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\dll-ansi-x86-release\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\dll-ansi-x86-release\VS2015\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">
+    <OutDir>$(SolutionDir)..\bin\dll-ansi-x64-release\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\dll-ansi-x64-release\VS2015\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\lib-ansi-x86-debug\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\lib-ansi-x86-debug\VS2015\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">
+    <OutDir>$(SolutionDir)..\bin\lib-ansi-x64-debug\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\lib-ansi-x64-debug\VS2015\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\lib-ansi-x86-release\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\lib-ansi-x86-release\VS2015\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">
+    <OutDir>$(SolutionDir)..\bin\lib-ansi-x64-release\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\lib-ansi-x64-release\VS2015\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_DEBUG;_WINDOWS;_DLL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrtd.lib;vcruntimed.lib;ucrtd.lib;oldnames.lib;SDL$(SDL_VER)d_vs2015.lib;getoptd_vs2015.lib;pthreadvsed_vs2015.lib;freetyped_vs2015.lib;SDL$(SDL_VER)maind_vs2015.lib;SDL$(SDL_VER)_drawd_vs2015.lib;SDL$(SDL_VER)_ttfd_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)d_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)dll-ansi-x86-debug;$(SDKDIR)C\Linux\Opt\getopt\lib\dll-ansi-x86-debug;$(SDKDIR)C\Linux\Opt\pthreads\lib\dll-ansi-x86-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\dll-ansi-x86-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\dll-ansi-x86-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\dll-ansi-x86-debug;$(SDKDIR)C\Linux\Min\freetype\lib\dll-ansi-x86-debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;_WINDOWS;_DLL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrtd.lib;vcruntimed.lib;ucrtd.lib;oldnames.lib;SDL$(SDL_VER)d_vs2015.lib;getoptd_vs2015.lib;pthreadvsed_vs2015.lib;freetyped_vs2015.lib;SDL$(SDL_VER)maind_vs2015.lib;SDL$(SDL_VER)_drawd_vs2015.lib;SDL$(SDL_VER)_ttfd_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)d_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)dll-ansi-x64-debug;$(SDKDIR)C\Linux\Opt\getopt\lib\dll-ansi-x64-debug;$(SDKDIR)C\Linux\Opt\pthreads\lib\dll-ansi-x64-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\dll-ansi-x64-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\dll-ansi-x64-debug;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\dll-ansi-x64-debug;$(SDKDIR)C\Linux\Min\freetype\lib\dll-ansi-x64-debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;_WINDOWS;_DLL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrt.lib;vcruntime.lib;ucrt.lib;oldnames.lib;getopt_vs2015.lib;pthreadvse_vs2015.lib;freetype_vs2015.lib;SDL$(SDL_VER)_vs2015.lib;SDL$(SDL_VER)main_vs2015.lib;SDL$(SDL_VER)_draw_vs2015.lib;SDL$(SDL_VER)_ttf_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)dll-ansi-x86-release;$(SDKDIR)C\Linux\Opt\getopt\lib\dll-ansi-x86-release;$(SDKDIR)C\Linux\Opt\pthreads\lib\dll-ansi-x86-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\dll-ansi-x86-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\dll-ansi-x86-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\dll-ansi-x86-release;$(SDKDIR)C\Linux\Min\freetype\lib\dll-ansi-x86-release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;_WINDOWS;_DLL;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrt.lib;vcruntime.lib;ucrt.lib;oldnames.lib;getopt_vs2015.lib;pthreadvse_vs2015.lib;freetype_vs2015.lib;SDL$(SDL_VER)_vs2015.lib;SDL$(SDL_VER)main_vs2015.lib;SDL$(SDL_VER)_draw_vs2015.lib;SDL$(SDL_VER)_ttf_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)dll-ansi-x64-release;$(SDKDIR)C\Linux\Opt\getopt\lib\dll-ansi-x64-release;$(SDKDIR)C\Linux\Opt\pthreads\lib\dll-ansi-x64-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\dll-ansi-x64-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\dll-ansi-x64-release;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\dll-ansi-x64-release;$(SDKDIR)C\Linux\Min\freetype\lib\dll-ansi-x64-release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_DEBUG;_WINDOWS;_LIB;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmtd.lib;libvcruntimed.lib;libucrtd.lib;oldnames.lib;rpcrt4.lib;dwrite.lib;usp10.lib;winmm.lib;imm32.lib;version.lib;dxguid.lib;setupapi.lib;getoptd_vs2015.lib;pthreadvsed_vs2015.lib;zlib1d_vs2015.lib;inffas32.VS2015.obj;match686.VS2015.obj;libpngd_vs2015.lib;libbz2d_vs2015.lib;ucdnd_vs2015.lib;harfbuzzd_vs2015.lib;freetyped_vs2015.lib;SDL$(SDL_VER)d_vs2015.lib;SDL$(SDL_VER)maind_vs2015.lib;SDL$(SDL_VER)_drawd_vs2015.lib;SDL$(SDL_VER)_ttfd_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)d_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)lib-ansi-x86-debug;"$(SDKDIR)C\Linux\Opt\getopt\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Opt\pthreads\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Min\zlib\lib\lib-ansi-x86-debug-noasm";"$(SDKDIR)C\Linux\Min\zlib\contrib\masmx86";"$(SDKDIR)C\Linux\Min\png\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Min\libbz2\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Min\UCDN\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Min\harfbuzz\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Min\freetype\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\lib-ansi-x86-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\lib-ansi-x86-debug";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;_WINDOWS;_LIB;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmtd.lib;libvcruntimed.lib;libucrtd.lib;oldnames.lib;rpcrt4.lib;dwrite.lib;usp10.lib;winmm.lib;imm32.lib;version.lib;dxguid.lib;setupapi.lib;getoptd_vs2015.lib;pthreadvsed_vs2015.lib;zlib1d_vs2015.lib;inffasx64.VS2015.obj;gvmat64.VS2015.obj;libpngd_vs2015.lib;libbz2d_vs2015.lib;ucdnd_vs2015.lib;harfbuzzd_vs2015.lib;freetyped_vs2015.lib;SDL$(SDL_VER)d_vs2015.lib;SDL$(SDL_VER)maind_vs2015.lib;SDL$(SDL_VER)_drawd_vs2015.lib;SDL$(SDL_VER)_ttfd_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)d_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)lib-ansi-x64-debug;"$(SDKDIR)C\Linux\Opt\getopt\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Opt\pthreads\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Min\zlib\lib\lib-ansi-x64-debug-noasm";"$(SDKDIR)C\Linux\Min\zlib\contrib\masmx64";"$(SDKDIR)C\Linux\Min\png\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Min\libbz2\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Min\UCDN\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Min\harfbuzz\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Min\freetype\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\lib-ansi-x64-debug";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\lib-ansi-x64-debug";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;_WINDOWS;_LIB;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmt.lib;libvcruntime.lib;libucrt.lib;oldnames.lib;rpcrt4.lib;dwrite.lib;usp10.lib;winmm.lib;imm32.lib;version.lib;dxguid.lib;setupapi.lib;getopt_vs2015.lib;pthreadvse_vs2015.lib;zlib1_vs2015.lib;inffas32.VS2015.obj;match686.VS2015.obj;libpng_vs2015.lib;libbz2_vs2015.lib;ucdn_vs2015.lib;harfbuzz_vs2015.lib;freetype_vs2015.lib;SDL$(SDL_VER)_vs2015.lib;SDL$(SDL_VER)main_vs2015.lib;SDL$(SDL_VER)_draw_vs2015.lib;SDL$(SDL_VER)_ttf_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)lib-ansi-x86-release;"$(SDKDIR)C\Linux\Opt\getopt\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Opt\pthreads\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Min\zlib\lib\lib-ansi-x86-release-noasm";"$(SDKDIR)C\Linux\Min\zlib\contrib\masmx86";"$(SDKDIR)C\Linux\Min\png\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Min\libbz2\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Min\UCDN\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Min\harfbuzz\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Min\freetype\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\lib-ansi-x86-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\lib-ansi-x86-release";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(SDKDIR)stdlib\include;$(SDKDIR)C\Linux\Opt\getopt\include;$(SDKDIR)C\Linux\Opt\pthreads\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\include;$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;_WINDOWS;_LIB;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcmt.lib;libvcruntime.lib;libucrt.lib;oldnames.lib;rpcrt4.lib;dwrite.lib;usp10.lib;winmm.lib;imm32.lib;version.lib;dxguid.lib;setupapi.lib;getopt_vs2015.lib;pthreadvse_vs2015.lib;zlib1_vs2015.lib;inffasx64.VS2015.obj;gvmat64.VS2015.obj;libpng_vs2015.lib;libbz2_vs2015.lib;ucdn_vs2015.lib;harfbuzz_vs2015.lib;freetype_vs2015.lib;SDL$(SDL_VER)_vs2015.lib;SDL$(SDL_VER)main_vs2015.lib;SDL$(SDL_VER)_draw_vs2015.lib;SDL$(SDL_VER)_ttf_vs2015.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_vs2015.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(TargetDir)lib-ansi-x64-release;"$(SDKDIR)C\Linux\Opt\getopt\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Opt\pthreads\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Min\zlib\lib\lib-ansi-x64-release-noasm";"$(SDKDIR)C\Linux\Min\zlib\contrib\masmx64";"$(SDKDIR)C\Linux\Min\png\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Min\libbz2\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Min\UCDN\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Min\harfbuzz\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Min\freetype\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_draw\lib\lib-ansi-x64-release";"$(SDKDIR)C\Linux\Sdl$(SDL_VER)\SDL_ttf\lib\lib-ansi-x64-release";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\asmlib.asm">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">nasm -f win32 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">nasm.exe -dLIBRARY -dLIBCFILE=MSVCRTD -f win32 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">nasm -f win64 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">nasm.exe -dLIBRARY -dLIBCFILE=MSVCRTD -f win64 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">nasm -f win32 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">nasm.exe -dLIBRARY -dLIBCFILE=MSVCRT -f win32 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">nasm -f win64 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">nasm.exe -dLIBRARY -dLIBCFILE=MSVCRT -f win64 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">nasm -f win32 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">nasm.exe -dLIBRARY -dLIBCFILE=LIBCMTD -f win32 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">nasm -f win64 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">nasm.exe -dLIBRARY -dLIBCFILE=LIBCMTD -f win64 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">nasm -f win32 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">nasm.exe -dLIBRARY -dLIBCFILE=LIBCMT -f win32 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">nasm -f win64 asmlib.asm ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">nasm.exe -dLIBRARY -dLIBCFILE=LIBCMT -f win64 -F cv8 -g -Xvc -o "$(IntDir)%(Filename).obj" "%(RootDir)%(Directory)\%(Filename).asm"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Complex_ADT.c" />
+    <ClCompile Include="..\src\DrawFractal.c" />
+    <ClCompile Include="..\src\FloatPoint.c" />
+    <ClCompile Include="..\src\Fractal.c" />
+    <ClCompile Include="..\src\Fractal_SIMD.c" />
+    <ClCompile Include="..\src\Graphics.c" />
+    <ClCompile Include="..\src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Complex_ADT.h" />
+    <ClInclude Include="..\include\Config\Compiler.h" />
+    <ClInclude Include="..\include\Config\Settings.h" />
+    <ClInclude Include="..\include\Config\Warnings.h" />
+    <ClInclude Include="..\include\DrawFractal.h" />
+    <ClInclude Include="..\include\FloatPoint.h" />
+    <ClInclude Include="..\include\Fractal.h" />
+    <ClInclude Include="..\include\Graphics.h" />
+    <ClInclude Include="..\include\SIMD\SIMDetect.h" />
+    <ClInclude Include="..\include\SIMD\SIMDIntrin.h" />
+    <ClInclude Include="..\include\SIMD\SIMDTypes.h" />
+    <ClInclude Include="..\include\stdinc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mandelbrot.cb1005" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="so-utf8-x86-debug">
+				<Option output="../bin/so-utf8-x86-debug/mandelbrot-cb1005" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../bin/so-utf8-x86-debug/obj/cb1005/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+					<Add option="-march=native" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="so-utf8-x86-release">
+				<Option output="../bin/so-utf8-x86-release/mandelbrot-cb1005" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../bin/so-utf8-x86-release/obj/cb1005/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m32" />
+					<Add option="-march=native" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="so-utf8-x64-debug">
+				<Option output="../bin/so-utf8-x64-debug/mandelbrot-cb1005" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../bin/so-utf8-x64-debug/obj/cb1005/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-march=native" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="so-utf8-x64-release">
+				<Option output="../bin/so-utf8-x64-release/mandelbrot-cb1005" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../bin/so-utf8-x64-release/obj/cb1005/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-march=native" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add option="-march=native" />
+			<Add option="-D_GNU_SOURCE=1" />
+			<Add option="-D_REENTRANT" />
+		</Compiler>
+		<Linker>
+			<Add library="pthread" />
+			<Add library="SDL" />
+			<Add library="SDL_ttf" />
+		</Linker>
+		<Unit filename="../include/Complex_ADT.h" />
+		<Unit filename="../include/Config/Compiler.h" />
+		<Unit filename="../include/Config/Settings.h" />
+		<Unit filename="../include/Config/Warnings.h" />
+		<Unit filename="../include/DrawFractal.h" />
+		<Unit filename="../include/FloatPoint.h" />
+		<Unit filename="../include/Fractal.h" />
+		<Unit filename="../include/Graphics.h" />
+		<Unit filename="../include/SIMD/SIMDIntrin.h" />
+		<Unit filename="../include/SIMD/SIMDTypes.h" />
+		<Unit filename="../include/SIMD/SIMDetect.h" />
+		<Unit filename="../include/stdinc.h" />
+		<Unit filename="../src/Complex_ADT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/DrawFractal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/FloatPoint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/Fractal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/Fractal_SIMD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/Graphics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/asmlib.asm">
+			<Option compilerVar="CC" />
+			<Option compiler="gcc" use="1" buildCommand='nasm -dLIBRARY -f elf`getconf LONG_BIT` -F stabs -g -Xvc -o &quot;$object&quot; &quot;$file&quot;' />
+		</Unit>
+		<Unit filename="../src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
