@@ -1,0 +1,8 @@
+11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+
+Initializing src [1073741824] ... done
+strlen (src) → 1073741823 == 1073741823? yes
+
+Benchmark (10 warm up, 100 iterations, summing up 1 invocations ... done
+
+glibc_fastest = 0.09535200000000001, mlstr_fastest = 0.34448200000000001
